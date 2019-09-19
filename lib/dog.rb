@@ -6,11 +6,7 @@ class Dog
 
     def initialize(name)
         @name = name
-        if @@all.include?(self)
-            nil
-        else
-            self.save
-        end
+        save
     end
     
     def name
